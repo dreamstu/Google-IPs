@@ -26,10 +26,15 @@
       "require": "./dist/src/index.js",
       "default": "./dist/src/index.js"
     },
-    "./data": "./dist/data/google-ips.json",
+    "./data": {
+      "types": "./data/google-ips.d.ts",
+      "require": "./dist/data/google-ips.json",
+      "default": "./dist/data/google-ips.json"
+    },
     "./package.json": "./package.json"
   },
   "files": [
+    "data/google-ips.d.ts",
     "dist/src",
     "dist/data",
     "README.md"
